@@ -1,0 +1,7 @@
+*.class
+*~
+.project
+.settings
+target/
+.classpath
+.pydevproject

@@ -69,11 +69,9 @@ def find(struct, vars, bindings = {}):
 		find(c, vars, bindings)
 	return bindings
 
-
 from NotesDB import *
 
 model = NotesDB("notes.db")
-
 
 # what?
 struct = Node(properties={
@@ -98,8 +96,6 @@ struct = Node(properties={
 print "gui structure", struct
 
 #from com.jakeapp.note3 import *
-
-print dir()
 
 from NoteEditImpl import *
 from NotesOverviewImpl import *
@@ -128,7 +124,7 @@ style = {
 	'NoteWindow': {
 	}
 }
-
-createGui(struct, bindings, style).build().launch()
-
+	
+def main(args):
+	createGui(struct, bindings, style).build().launch()
 

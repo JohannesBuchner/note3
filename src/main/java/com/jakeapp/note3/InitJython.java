@@ -16,19 +16,9 @@ public class InitJython extends AbstractJythonInit {
 	}
 
 	public void run() {
-	    /*Injector injector = Guice.createInjector(new ProjectModule());
-	    c.set("injector", injector);
-	    c.set("localProjectActions", injector.getInstance(LocalProjectActionsFactory.class));
-	    c.set("connectProjectActions", injector.getInstance(ConnectProjectActionsFactory.class));
-	    c.set("interactProjectActions", injector.getInstance(InteractProjectActionsFactory.class));
-	    c.set("projectActions", injector.getInstance(ProjectActionsFactory.class));
-	    c.set("contextFactory", injector.getInstance(ContextFactory.class));
-		
-		c.set("jythonConsole", c);
-		c.set("jythonAppArgs", args);*/
-		//c.exec("try:\n import sys\n import note3\n note3.main(sys.argv)\nexcept SystemExit: pass");
-		//  c.execfile(InitJython.class.getResourceAsStream("mainwindow.py"));
-		c.interact();
+		c.exec("try:\n import sys\n import note3\n note3.main(sys.argv)\nexcept SystemExit: pass");
+		// c.execfile(InitJython.class.getResourceAsStream("mainwindow.py"));
+		// c.interact();
 	}
 
 }
