@@ -1,5 +1,5 @@
 note3 is a Notational Velocity clone
--------------------------------------
+=====================================
 
 Behaviour: 
 -----------
@@ -18,7 +18,7 @@ create easily deployable, native but cross-platform, scripted GUIs.
 
 It shows how to 
 
-  * integrate python libraries using the [[http://mavenjython.sourceforge.net/|maven-jython-compile-plugin]]
+  * integrate python libraries using the `maven-jython-compile-plugin <http://mavenjython.sourceforge.net/>`_
 
   * create scalable, testable, stylable GUI applications in Python
 
@@ -29,13 +29,17 @@ dependency (swt-gtk for linux, swt-win32/64 for windows).
 
 Run 
 
- $ mvn package
+::
+
+  $ mvn package
 
 You will find a target/note3-VERSION-jar-with-dependencies.jar
 This jar is a fully contained Jython+SWT application. You can launch 
 it by double-clicking, or with
 
- $ java -jar target/note3-VERSION-jar-with-dependencies.jar
+::
+
+  $ java -jar target/note3-VERSION-jar-with-dependencies.jar
 
 
 
