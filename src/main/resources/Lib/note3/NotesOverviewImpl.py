@@ -67,6 +67,7 @@ class NotesOverviewImpl(GuiImpl):
 			c.build(parent)
 		
 		for s in self.styles:
+			print "NoteOverviewImpl style:", s
 			self.apply_style(s)
 		
 		return self

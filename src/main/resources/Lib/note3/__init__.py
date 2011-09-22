@@ -46,6 +46,7 @@ def createGui(structure, bindings, style):
 	if 'global' in style:
 		impl.styles.append(style['global'])
 	if name in style:
+		print "storing style", style[name], ' for ', name
 		impl.styles.append(style[name])
 	for c in children:
 		c.parent = impl

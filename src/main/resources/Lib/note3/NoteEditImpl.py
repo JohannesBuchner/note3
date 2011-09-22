@@ -38,6 +38,7 @@ class NoteEditImpl(GuiImpl):
 		self.textbox.addKeyListener(keyPressListener(f, keycode = SWT.ARROW_UP | SWT.CTRL))
 		
 		for s in self.styles:
+			print "NoteEditImpl style:", s
 			self.apply_style(s)
 		
 	def focus(self):

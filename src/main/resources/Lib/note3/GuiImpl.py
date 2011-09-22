@@ -34,10 +34,11 @@ from org.eclipse.swt import *
 #from org.eclipse.swt.dnd import *
 
 class GuiImpl(object):
-	structure = None
-	children = None
-	parent = None
-	styles = []
+	def __init__(self):
+		self.structure = None
+		self.children = None
+		self.parent = None
+		self.styles = []
 	
 	def build(self):
 		pass
